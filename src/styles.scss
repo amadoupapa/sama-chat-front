@@ -1,1 +1,150 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Couleur de fond générale */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  
+  /* Header avec le titre */
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #0c2e8a;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 2.5rem;
+    z-index: 10;
+  }
+  
+  /* Animation du titre */
+  .animated-title {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 3rem;
+    color: #fff; /* Couleur de départ */
+    background-image: linear-gradient(90deg, #f6d365, #ffbc00, #f76c6c, #ff5c8f);
+    background-size: 200% 100%;
+    background-clip: text;
+    color: transparent;
+    animation: slideColor 20s linear infinite; /* Animation plus lente (20 secondes) */
+  }
+  
+  /* Animation des couleurs qui glissent sur le texte */
+  @keyframes slideColor {
+    0% {
+      background-position: 200% 0;
+    }
+    50% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+  /* Animation des couleurs qui glissent sur le texte */
+  @keyframes slideColor {
+    0% {
+      background-position: 200% 0;
+    }
+    50% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+  
+  .rw-conversation-container {
+    /* Styles for header */
+    .rw-header {
+      background-color: #0c2e8a !important;
+      .rw-title {
+      }
+      .rw-close-function {
+      }
+      .rw-loading {
+      }
+    }
+  
+    .rw-messages-container {
+      .rw-message {
+        .rw-client {
+          background-color: #0c2e8a;
+        }
+        .rw-response {
+        }
+      }
+  
+      /* Styles for replies */
+      .rw-replies {
+        /* Styles for reply */
+        .rw-reply {
+          /* Add styles for reply */
+        }
+        /* Styles for reply response */
+        .rw-response {
+          /* Add styles for reply response */
+        }
+      }
+  
+      /* Styles for snippet */
+      .rw-snippet {
+        /* Styles for snippet title */
+        .rw-snippet-title {
+          /* Add styles for snippet title */
+        }
+        /* Styles for snippet details */
+        .rw-snippet-details {
+          /* Add styles for snippet details */
+        }
+       
+        .rw-link {
+          
+        }
+      }
+  
+      
+      .rw-imageFrame {
+       
+      }
+  
+      
+      .rw-videoFrame {
+       
+      }
+    }
+  
+    
+    .rw-sender {
+    
+      .rw-new-message {
+        
+      }
+      
+      .rw-send {
+        
+      }
+    }
+  }
+  
+  .rw-widget-container .rw-launcher{
+      background-color: #0c2e8a!important;
+  }
+  
+  .rw-widget-embedded{
+     
+  }

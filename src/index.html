@@ -9,5 +9,48 @@
 </head>
 <body>
   <app-root></app-root>
+  <header>
+    <h1 class="animated-title">Bienvenue sur SamaChat (version bêta) !</h1>
+  </header>
+
+
+    <script>!(function () {
+      var url = '34.66.162.62:5005'
+        let e = document.createElement("script"),
+          t = document.head || document.getElementsByTagName("head")[0];
+        (e.src =
+          "https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.js"),
+          
+          
+          (e.async = !0),
+          (e.onload = () => {
+            window.WebChat.default(
+              {
+              
+                customData: { language: "fr" },
+                initPayload:"/bonjour",
+                socketUrl: url,
+                socketPath : "/socket.io/",
+                title: "Sama Chat (bêta)",
+                embedded: false,
+                displayUnreadCount: true,
+                subtitle: "Votre assistant virtuel intelligent",
+                docViewer: false,
+                inputTextFieldHint: "Tapez votre message",
+                showFullScreenButton: true,
+                showMessageDate : true,
+                params: {"storage": "local"},
+                
+                // add other props here
+              },    
+              null,
+      
+            );
+          }),
+          t.insertBefore(e, t.firstChild);
+      })();
+      </script>
+  
+  
 </body>
 </html>
